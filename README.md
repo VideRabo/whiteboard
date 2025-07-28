@@ -12,6 +12,8 @@ This project is built with React and Vite, providing fast development and hot mo
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint
 - `npm run preview` - Preview production build
+- `npm run test` - Run tests with Vitest
+- `npm run test:coverage` - Run tests with coverage
 
 ### Dependencies
 
@@ -24,3 +26,18 @@ This project is built with React and Vite, providing fast development and hot mo
 1. Install dependencies: `npm install`
 2. Start development server: `npm run dev`
 3. Open http://localhost:5173 in your browser
+
+## Testing
+
+This project uses [Vitest](https://vitest.dev/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/) for unit and component testing.
+
+### Install dependencies
+
+```bash
+npm install --save-dev vitest @testing-library/react @testing-library/jest-dom
+```
+
+### Running tests
+
+- `npm run test` to start Vitest in watch mode.
+- `npm run test:coverage` to run tests once and generate a coverage report.
